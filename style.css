@@ -214,7 +214,6 @@ button:active{
   font-size: 48px;
   color: rgba(56, 58, 69, 1);
 }
-
 /*================================================================*/
 /*estilos para las cards*/
 .cards-container {
@@ -281,3 +280,5 @@ button:active{
   font-weight: 400;
   font-size: 16px;
 }
+
+
