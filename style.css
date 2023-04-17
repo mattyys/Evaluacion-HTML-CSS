@@ -2,15 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 html {
   font-family: "Poppins", sans-serif;
+ 
 }
 
+/* =================================================================*/
 /*Estilo y forma al contenedor header*/
 
 .header-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 90px;
   background-color: rgba(43, 39, 39, 1);
@@ -20,30 +23,42 @@ html {
   flex-wrap: wrap;
   overflow: hidden;
 }
+/*estilo y posición del logo cafe */
 .cafe-logo {
   width: 79px;
   height: 50px;
   margin-left: 125px;
 }
+
+/*estilos y posicion de logo lupa y carrito*/
 .search-logo {
   width: 17.5px;
   height: 17.5px;
   margin-right: 36.5px;
+}
+.search-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 250ms ease-in-out;
 }
 .shopp-logo {
   width: 20px;
   height: 20px;
   margin-right: 138px;
 }
+.shopp-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 250ms ease-in-out;
+}
 
-/*estilos en texto de navbar*/
+/*estilos en texto de navbar */
 
 .navBar {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 450px;
-  
 }
 
 .navBar-text {
@@ -52,7 +67,10 @@ html {
   color: #ffff;
   text-decoration: none;
 }
-.navBar-text a:hover{
+.navBar-text:hover{
+  text-shadow: 0 0 03px #e4e4e4;
+  transform: scale(1.03);
+  transition: all 250ms ease-in-out;
   
 }
 
@@ -66,6 +84,7 @@ html {
   width: 100%;
   height: 80vh;
 }
+/*ubicacion imagen fondo hero*/
 .hero .hero-img {
   position: absolute;
   z-index: -1;
@@ -74,6 +93,11 @@ html {
   object-fit: cover;
   filter: brightness(60%) blur(1px);
 }
+
+/*==================================================================*/
+
+/*alineacion de contenido del hero*/
+
 .hero-info {
   text-align: center;
   color: rgba(255, 255, 255, 1);
@@ -87,7 +111,9 @@ html {
   flex-wrap: wrap;
   /*font-style: normal;
     line-height: 96px;*/
+    
 }
+
 .hero-info p {
   font-weight: 400;
   font-size: 36px;
@@ -107,9 +133,6 @@ button {
   width: 120px;
   height: 36px;
   border-radius: 3px;
-  background-color: rgba(194, 159, 118, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #ffff;
 }
 .primary {
   background-color: rgba(194, 159, 118, 1);
@@ -118,7 +141,7 @@ button {
   margin-right: 15px;
 }
 .primary:hover{
-  background-color:rgb(207, 175, 138); 
+  background-color:rgba(209, 174, 133,1); 
   transition: all 200ms ease-in-out;
   
 }
@@ -135,16 +158,18 @@ button:active{
   margin-left: 15px;
 }
 .secondary:hover{
-  background-color: rgb(231, 231, 231);
+  background-color: rgba(235, 235, 235,1);
   transition: all 200ms ease-in-out
 
 }
+
 /*botones forward y reward*/
 .scrool-btn-container {
   align-self: flex-end;
   position: absolute;
   right: 13px;
   bottom: 13px;
+  display: flex;
 }
 .scrool-btn {
   width: 60px;
@@ -154,13 +179,19 @@ button:active{
   background-color: rgba(43, 39, 39, 1);
 }
 .reward:hover{
-  background-color: rgb(61, 56, 56);
+  background-color: rgba(61, 56, 56,1);
   transition: all 200ms ease-in-out
 }
 
 .forward {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.forward:hover{
+  background-color: rgba(210, 210, 210, 0.5);
+  transition: all 200ms ease-in-out
+}
+
+/*================================================================*/
 
 /*estilos seccion productos*/
 .products-section{
@@ -170,7 +201,8 @@ button:active{
   align-items: center;
   justify-content: center;
   flex-direction: column;
- justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 /*estilo para nombre Nuestro Productos h2*/
@@ -183,6 +215,7 @@ button:active{
   color: rgba(56, 58, 69, 1);
 }
 
+/*================================================================*/
 /*estilos para las cards*/
 .cards-container {
   width: 100%;
@@ -190,7 +223,7 @@ button:active{
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
   padding-top: 6rem;
   padding-bottom: 15rem;
 }
@@ -198,6 +231,7 @@ button:active{
   width: 260px;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffff;
 }
 .card__image {
   width: 100%;
@@ -225,6 +259,10 @@ button:active{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 18.5px;
 }
+.primary-card:hover{
+  background-color: rgba(120, 213, 144, 1);
+  transition: all 200ms ease-in-out;
+}
 
 /*estilo info de la card y linea*/
 .card .info-container hr {
@@ -242,8 +280,4 @@ button:active{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-
- 
 }
-
-
