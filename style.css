@@ -1,117 +1,219 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html{
-    font-family: 'Poppins', sans-serif;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Estilo y forma al contenedor header*/
+
+.header-container {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(43, 39, 39, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.cafe-logo {
+  width: 79px;
+  height: 50px;
+  margin-left: 125px;
+}
+.search-logo {
+  width: 17.5px;
+  height: 17.5px;
+  margin-right: 36.5px;
+}
+.shopp-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 138px;
+}
+
+/*estilos en texto de navbar*/
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 516px;
+  width: 450px;
   
+}
 
-  /*Estilo y forma al contenedor header*/
+.navBar-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffff;
+  text-decoration: none;
+}
 
-  .header-container{
-    position: absolute;
-    width: 100%;
-    height: 90px;
-    background-color: rgba(43,39,39,1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-  }
-  .cafe-logo{
-    width: 79px;
-    height: 50px;
-    margin-left: 125px;
-  }
-  .search-logo{
-    width: 17.5px;
-    height: 17.5px;
-    margin-right: 36.5px;
-  }
-  .shopp-logo{
-    width: 20px;
-    height: 20px;
-    margin-right: 138px;
-  }
-  /*estilos en texto de navbar*/
+/*estilo y forma al hero*/
 
-  .navBar{
-   display: flex;
-   justify-content: space-between;
-   /* flex-wrap: wrap;*/
-   margin-right: 516px;
-  width: 750px;
-  }
-
-  .navBar-text{
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffff;
-    text-decoration: none;
-    
-  }
-
-
-  /*estilo y forma al hero*/
-  
-  .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 982px;
-    
-  }
-  .hero .hero-img{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    filter: brightness(60%) blur(1px);
-
-  }
-  .hero-info{
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    
-  }
-  .hero-info h1{
-    width: 1089px;
-    height: 192px;
-    font-size: 64px;
-    font-weight: 600;
-    /*font-style: normal;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.hero .hero-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%) blur(1px);
+}
+.hero-info {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.hero-info h1 {
+  width: 1089px;
+  height: 192px;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  /*font-style: normal;
     line-height: 96px;*/
-  }
-  .hero-info p{
-    font-weight: 400;
-    font-size: 36px;
-  }
-  button{    
-    border: none;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 500;
-    font-size: 15px;
-    cursor: pointer;
-    transition: all 250ms ease-in-out;
-  }
-  .primary{
-    width: 120px;
-    height: 36px;
-    border-radius: 3px;
-    background-color: rgba(194, 159, 118, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #ffff;
-    
-    
+}
+.hero-info p {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 34px;
+}
+button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+/*estilos en botones del hero*/
+.hero-btn {
+  width: 120px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: rgba(194, 159, 118, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffff;
+}
+.primary {
+  background-color: rgba(194, 159, 118, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffff;
+  margin-right: 15px;
+}
+.secondary {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #2b2727;
+  margin-left: 15px;
+}
+/*botones forward y reward*/
+.scrool-btn-container {
+  align-self: flex-end;
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+}
+.scrool-btn {
+  width: 60px;
+  height: 60px;
+}
+.reward {
+  background-color: rgba(43, 39, 39, 1);
+}
+.forward {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
-  }
-  
-  
+/*estilos seccion productos*/
+.products-section{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ justify-content: space-between;
+}
 
-  
+/*estilo para nombre Nuestro Productos h2*/
+.products-section h2 {
+  margin-top: 114px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: rgba(56, 58, 69, 1);
+}
+
+/*estilos para las cards*/
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ /* flex-wrap: wrap;*/
+  gap: 60px;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+  padding-bottom: 15rem;
+}
+.card {
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__image {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Estilos para botones del card*/
+.primary-card {
+  width: 138px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: rgba(108, 191, 132, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 18.5px;
+}
+
+/*estilo info de la card y linea*/
+.card .info-container hr {
+  width: 223px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 22px 16px;
+}
+.name-product {
+  margin-top: 18px;
+}
+
+
