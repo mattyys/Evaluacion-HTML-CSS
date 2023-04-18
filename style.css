@@ -4,9 +4,9 @@
   padding: 0;
   
 }
-html {
+body {
   font-family: "Poppins", sans-serif;
- 
+  
 }
 
 /* =================================================================*/
@@ -15,7 +15,7 @@ html {
 .header-container {
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 65%;
   background-color: rgba(43, 39, 39, 1);
   display: flex;
   justify-content: space-between;
@@ -25,16 +25,24 @@ html {
 }
 /*estilo y posición del logo cafe */
 .cafe-logo {
-  width: 79px;
-  height: 50px;
-  margin-left: 125px;
+  width: 4.94rem;
+  height: 3.125rem;
+  margin-left: 7%;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
 }
 
 /*estilos y posicion de logo lupa y carrito*/
+.icon-nav-container{
+  display: flex;
+  gap: 2.25rem;
+  margin-right: 7%;
+
+}
 .search-logo {
-  width: 17.5px;
-  height: 17.5px;
-  margin-right: 36.5px;
+  width: 1.1rem;
+  height: 1.1rem;
+ /* margin-right: 36.5px;*/
 }
 .search-logo:hover{
   cursor: pointer;
@@ -42,9 +50,9 @@ html {
   transition: all 250ms ease-in-out;
 }
 .shopp-logo {
-  width: 20px;
-  height: 20px;
-  margin-right: 138px;
+  width: 1.125rem;
+  height: 1.125rem;
+  /*margin-right: 138px;*/
 }
 .shopp-logo:hover{
   cursor: pointer;
@@ -56,14 +64,16 @@ html {
 
 .navBar {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  margin-right: 15%;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  width: 450px;
+  width: 40%;
 }
 
 .navBar-text {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ffff;
   text-decoration: none;
 }
@@ -73,16 +83,19 @@ html {
   transition: all 250ms ease-in-out;
   
 }
-
+/*================================================================*/
 /*estilo y forma al hero*/
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   position: relative;
+  flex-wrap: wrap;
   width: 100%;
   height: 80vh;
+  /*overflow: hidden;*/
 }
 /*ubicacion imagen fondo hero*/
 .hero .hero-img {
@@ -90,45 +103,65 @@ html {
   z-index: -1;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   object-fit: cover;
   filter: brightness(60%) blur(1px);
 }
 
-/*==================================================================*/
-
 /*alineacion de contenido del hero*/
 
 .hero-info {
+  height: 100%;
+  width: 100%;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap:wrap-reverse;
+ 
+  
 }
 .hero-info h1 {
-  width: 1089px;
-  height: 192px;
-  font-size: 64px;
+  /*width: 80%;
+  /*height: 20%;
+  height: 12rem;*/
+  max-width: 1089px;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
-  flex-wrap: wrap;
-  /*font-style: normal;
+  line-height: 6rem;
+    /*font-style: normal;
     line-height: 96px;*/
-    
+    /*margin-left: 15%;
+    margin-right: 15%;*/
 }
 
 .hero-info p {
+  
   font-weight: 400;
-  font-size: 36px;
-  margin-bottom: 34px;
+  font-size: 2.25rem;
+  margin-bottom: 2.125rem;
 }
 button {
   border: none;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.94rem;
   cursor: pointer;
   /*transition: all 250ms ease-in-out;*/
 }
 
 /*estilos en botones del hero*/
+.button-info-container{
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  
+ 
+}
 .hero-btn {
   width: 120px;
   height: 36px;
@@ -138,7 +171,7 @@ button {
   background-color: rgba(194, 159, 118, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffff;
-  margin-right: 15px;
+  
 }
 .primary:hover{
   background-color:rgba(209, 174, 133,1); 
@@ -155,7 +188,7 @@ button:active{
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #2b2727;
-  margin-left: 15px;
+  
 }
 .secondary:hover{
   background-color: rgba(235, 235, 235,1);
@@ -167,13 +200,13 @@ button:active{
 .scrool-btn-container {
   align-self: flex-end;
   position: absolute;
-  right: 13px;
-  bottom: 13px;
+  right: 0.8rem;
+  bottom: 0.8rem;
   display: flex;
 }
 .scrool-btn {
-  width: 60px;
-  height: 60px;
+  width: 3.75em;
+  height: 3.75em;
 }
 .reward {
   background-color: rgba(43, 39, 39, 1);
@@ -207,11 +240,11 @@ button:active{
 
 /*estilo para nombre Nuestro Productos h2*/
 .products-section h2 {
-  margin-top: 114px;
+  margin-top: 7.125rem;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3rem;
   color: rgba(56, 58, 69, 1);
 }
 /*================================================================*/
